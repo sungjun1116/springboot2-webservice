@@ -26,7 +26,7 @@ JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar | tail -n 1)
 echo "> JAR NAME: $JAR_NAME"
 
 echo "> $JAR_NAME 에 실행권한 추가"
-chmod +x /home/ec2-user/app/step2/zip/$JAR_NAME
+chmod +x /home/ec2-user/app/step2/$JAR_NAME
 
 echo "> JAR_NAME 실행"
 
