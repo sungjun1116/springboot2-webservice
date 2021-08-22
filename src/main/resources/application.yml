@@ -6,4 +6,6 @@ spring:
       real1: real1, real-db, oauth
       real2: real2, real-db, oauth
 
+    active: local-real
+
 
