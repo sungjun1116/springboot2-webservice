@@ -1,4 +1,13 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+        dialect.storage_engine: innodb
+        format_sql: true
+  session:
+    store-type: jdbc
+
 logging:
   level:
-    org:
-      hibernate.SQL: DEBUG
+    org.hibernate.SQL: DEBUG

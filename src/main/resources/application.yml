@@ -3,18 +3,7 @@ spring:
     group:
       local-real: local-real, oauth
       real: real, real-db, oauth
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL57Dialect
-        dialect.storage_engine: innodb
-        format_sql: true
-  session:
-    store-type: jdbc
+      real1: real1, real-db, oauth
+      real2: real2, real-db, oauth
 
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: DEBUG
-        type: TRACE
+
