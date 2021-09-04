@@ -11,9 +11,8 @@ endif::[]
 :operation-http-response-title: Example Response
 [[resources]]
 = Resources
-[[resources-hello]]
-== Hello
-[[resources-posts-create]]
+
 === hello 조회
-operation::hello-get[snippets='http-request,http-response,request-parameters,response-body']
+operation::hello-get[snippets='curl-request,http-request,request-parameters,http-response']
+
 
