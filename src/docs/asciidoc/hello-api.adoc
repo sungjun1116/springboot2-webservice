@@ -1,0 +1,19 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:operation-http-request-title: Example Request
+:operation-http-response-title: Example Response
+[[resources]]
+= Resources
+[[resources-hello]]
+== Hello
+[[resources-posts-create]]
+=== hello 조회
+operation::hello-get[snippets='http-request,http-response,request-parameters,response-body']
+
