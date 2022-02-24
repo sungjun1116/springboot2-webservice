@@ -15,7 +15,6 @@ ext {
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -55,10 +54,14 @@ asciidoctor {
     dependsOn test    // gradle build 시 test -> asciidoctor 순으로 수행
 }
 
-bootJar {
+task copyDocument(type: Copy) {
     dependsOn asciidoctor
-    from("${asciidoctor.outputDir}/html5") {
-        into 'static/docs'
-    }
+
+    from file("build/asciidoc/html5/")
+    into file("src/main/resources/static/docs")
+}
+
+build {
+    dependsOn copyDocument
 }
 
