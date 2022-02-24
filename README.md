@@ -11,6 +11,7 @@
 
 ## DB
 local: h2
+
 prod: AWS RDS
 
 ## 시스템 구조
